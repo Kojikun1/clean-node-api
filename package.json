@@ -5,11 +5,11 @@
   "main": "teste.js",
   "scripts": {
     "test": "jest",
-    "test:staged": "jest",
+    "test:staged": "jest --passWithNoTests",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.ts": [
+    "*.ts": [
       "eslint 'src/**' --fix",
       "npm run test:staged"
     ]
