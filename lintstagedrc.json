@@ -1,0 +1,6 @@
+{
+    "*.ts": [
+        "eslist 'src/**' --fix",
+        "git add"
+    ]
+}
