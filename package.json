@@ -4,7 +4,7 @@
   "description": "",
   "main": "teste.js",
   "scripts": {
-    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand", 
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@types/jest": "^29.5.1",
     "@types/node": "^18.16.0",
+    "@types/validator": "^13.7.15",
     "eslint-config-standard-with-typescript": "^34.0.1",
     "git-commit-msg-linter": "^4.10.0",
     "husky": "^8.0.3",
@@ -31,5 +32,8 @@
     "lint-staged": "^13.2.1",
     "ts-jest": "^29.1.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "validator": "^13.9.0"
   }
 }
